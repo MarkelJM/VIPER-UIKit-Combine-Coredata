@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 struct HTTPMethods {
     static let post = "POST"
@@ -21,6 +22,7 @@ struct MarvelAPI {
     private let apiHash = "6dc8945eb3e9ef983687e97d9ee2445b"
     private let apiTimestamp = "1"
     
+    /*
     func getHeroesRequest() -> URLRequest {
         let urlPath = "/characters"
         let urlApi = "\(baseURL)\(urlPath)?ts=\(apiTimestamp)&apikey=\(apiKey)&hash=\(apiHash)&orderBy=-modified"
@@ -28,7 +30,22 @@ struct MarvelAPI {
         request.httpMethod = HTTPMethods.get
         return request
     }
+     */
+    
+    func getHeroesRequest() -> AnyPublisher<[Hero], Error> {
+        let urlPath = "/characters"
+        let urlApi = "\(baseURL)\(urlPath)?ts=\(apiTimestamp)&apikey=\(apiKey)&hash=\(apiHash)&orderBy=-modified"
+        guard let url = URL(string: urlApi) else {
+            fatalError("Invalid URL")
+        }
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map { $0.data }
+            .decode(type: HeroeWelcome.self, decoder: JSONDecoder())
+            .map { $0.data.results }
+            .eraseToAnyPublisher()
+    }
 
+    
     func getSeriesRequest(for hero: Hero, limit: Int) -> URLRequest {
         let urlPath = "/characters/\(hero.id)/series"
         let urlApi = "\(baseURL)\(urlPath)?ts=\(apiTimestamp)&apikey=\(apiKey)&hash=\(apiHash)&orderBy=-modified&limit=\(limit)"
@@ -54,4 +71,27 @@ struct MarvelAPI {
         
         return request
     }
+    
+    
+    /*probando problemas en la lista:*/
+    private var cancellables = Set<AnyCancellable>()
+
+    mutating func testGetHeroesRequest() {
+        getHeroesRequest()
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    print("Error fetching heroes: \(error)")
+                case .finished:
+                    print("Finished fetching heroes")
+                }
+            } receiveValue: { heroes in
+                for hero in heroes.prefix(10) {
+                    print("Hero: \(hero)")
+                }
+            }
+            .store(in: &cancellables)
+    }
 }
+
+

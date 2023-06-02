@@ -37,6 +37,39 @@
 		D37A99C02A226C93001C9254 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99BF2A226C93001C9254 /* LoginRouter.swift */; };
 		D37A99C12A226C93001C9254 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99BF2A226C93001C9254 /* LoginRouter.swift */; };
 		D37A99C22A226C93001C9254 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99BF2A226C93001C9254 /* LoginRouter.swift */; };
+		D37A99C52A227273001C9254 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99C42A227273001C9254 /* ImageLoader.swift */; };
+		D37A99C62A227273001C9254 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99C42A227273001C9254 /* ImageLoader.swift */; };
+		D37A99C72A227273001C9254 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99C42A227273001C9254 /* ImageLoader.swift */; };
+		D37A99CD2A2272CA001C9254 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99CC2A2272CA001C9254 /* HeroCell.swift */; };
+		D37A99CE2A2272CA001C9254 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99CC2A2272CA001C9254 /* HeroCell.swift */; };
+		D37A99CF2A2272CA001C9254 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99CC2A2272CA001C9254 /* HeroCell.swift */; };
+		D37A99D12A2272F4001C9254 /* HeroeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D02A2272F4001C9254 /* HeroeListView.swift */; };
+		D37A99D22A2272F4001C9254 /* HeroeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D02A2272F4001C9254 /* HeroeListView.swift */; };
+		D37A99D32A2272F4001C9254 /* HeroeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D02A2272F4001C9254 /* HeroeListView.swift */; };
+		D37A99D52A227312001C9254 /* HeroListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D42A227312001C9254 /* HeroListInteractor.swift */; };
+		D37A99D62A227312001C9254 /* HeroListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D42A227312001C9254 /* HeroListInteractor.swift */; };
+		D37A99D72A227312001C9254 /* HeroListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D42A227312001C9254 /* HeroListInteractor.swift */; };
+		D37A99D92A2273E4001C9254 /* PresenterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D82A2273E4001C9254 /* PresenterHeroList.swift */; };
+		D37A99DA2A2273E4001C9254 /* PresenterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D82A2273E4001C9254 /* PresenterHeroList.swift */; };
+		D37A99DB2A2273E4001C9254 /* PresenterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99D82A2273E4001C9254 /* PresenterHeroList.swift */; };
+		D37A99DD2A227400001C9254 /* RouterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99DC2A227400001C9254 /* RouterHeroList.swift */; };
+		D37A99DE2A227400001C9254 /* RouterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99DC2A227400001C9254 /* RouterHeroList.swift */; };
+		D37A99DF2A227400001C9254 /* RouterHeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99DC2A227400001C9254 /* RouterHeroList.swift */; };
+		D37A99E52A23CF32001C9254 /* InteractorSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E42A23CF32001C9254 /* InteractorSeries.swift */; };
+		D37A99E62A23CF32001C9254 /* InteractorSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E42A23CF32001C9254 /* InteractorSeries.swift */; };
+		D37A99E72A23CF32001C9254 /* InteractorSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E42A23CF32001C9254 /* InteractorSeries.swift */; };
+		D37A99E92A23CF66001C9254 /* ViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E82A23CF66001C9254 /* ViewSeries.swift */; };
+		D37A99EA2A23CF66001C9254 /* ViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E82A23CF66001C9254 /* ViewSeries.swift */; };
+		D37A99EB2A23CF66001C9254 /* ViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99E82A23CF66001C9254 /* ViewSeries.swift */; };
+		D37A99ED2A23CF8A001C9254 /* PresenterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99EC2A23CF8A001C9254 /* PresenterSeries.swift */; };
+		D37A99EE2A23CF8A001C9254 /* PresenterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99EC2A23CF8A001C9254 /* PresenterSeries.swift */; };
+		D37A99EF2A23CF8A001C9254 /* PresenterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99EC2A23CF8A001C9254 /* PresenterSeries.swift */; };
+		D37A99F12A23CFD3001C9254 /* RouterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F02A23CFD3001C9254 /* RouterSeries.swift */; };
+		D37A99F22A23CFD3001C9254 /* RouterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F02A23CFD3001C9254 /* RouterSeries.swift */; };
+		D37A99F32A23CFD3001C9254 /* RouterSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F02A23CFD3001C9254 /* RouterSeries.swift */; };
+		D37A99F52A23D30B001C9254 /* CellViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F42A23D30B001C9254 /* CellViewSeries.swift */; };
+		D37A99F62A23D30B001C9254 /* CellViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F42A23D30B001C9254 /* CellViewSeries.swift */; };
+		D37A99F72A23D30B001C9254 /* CellViewSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A99F42A23D30B001C9254 /* CellViewSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +110,17 @@
 		D37A99B72A226C57001C9254 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		D37A99BB2A226C75001C9254 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		D37A99BF2A226C93001C9254 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D37A99C42A227273001C9254 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		D37A99CC2A2272CA001C9254 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		D37A99D02A2272F4001C9254 /* HeroeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeListView.swift; sourceTree = "<group>"; };
+		D37A99D42A227312001C9254 /* HeroListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListInteractor.swift; sourceTree = "<group>"; };
+		D37A99D82A2273E4001C9254 /* PresenterHeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterHeroList.swift; sourceTree = "<group>"; };
+		D37A99DC2A227400001C9254 /* RouterHeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHeroList.swift; sourceTree = "<group>"; };
+		D37A99E42A23CF32001C9254 /* InteractorSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorSeries.swift; sourceTree = "<group>"; };
+		D37A99E82A23CF66001C9254 /* ViewSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSeries.swift; sourceTree = "<group>"; };
+		D37A99EC2A23CF8A001C9254 /* PresenterSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterSeries.swift; sourceTree = "<group>"; };
+		D37A99F02A23CFD3001C9254 /* RouterSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSeries.swift; sourceTree = "<group>"; };
+		D37A99F42A23D30B001C9254 /* CellViewSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewSeries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +171,7 @@
 		D37A99642A22639E001C9254 /* VIPER-UIKit-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				D37A99C32A227262001C9254 /* ImageLoader */,
 				D37A99A82A22650F001C9254 /* Login */,
 				D37A99A22A2264E1001C9254 /* SeriesList */,
 				D37A999C2A22649F001C9254 /* HerosList */,
@@ -186,7 +231,11 @@
 		D37A999C2A22649F001C9254 /* HerosList */ = {
 			isa = PBXGroup;
 			children = (
+				D37A99CB2A2272B5001C9254 /* Router */,
 				D37A999D2A2264B3001C9254 /* Entity */,
+				D37A99CA2A2272A8001C9254 /* Presenter */,
+				D37A99C92A227299001C9254 /* Interactor */,
+				D37A99C82A227292001C9254 /* View */,
 			);
 			path = HerosList;
 			sourceTree = "<group>";
@@ -202,7 +251,11 @@
 		D37A99A22A2264E1001C9254 /* SeriesList */ = {
 			isa = PBXGroup;
 			children = (
+				D37A99E32A23CEF1001C9254 /* Router */,
 				D37A99A32A2264EB001C9254 /* Entity */,
+				D37A99E22A23CEEB001C9254 /* Presenter */,
+				D37A99E12A23CEE3001C9254 /* Interactor */,
+				D37A99E02A23CEDC001C9254 /* View */,
 			);
 			path = SeriesList;
 			sourceTree = "<group>";
@@ -262,6 +315,80 @@
 			isa = PBXGroup;
 			children = (
 				D37A99BF2A226C93001C9254 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D37A99C32A227262001C9254 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99C42A227273001C9254 /* ImageLoader.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		D37A99C82A227292001C9254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99CC2A2272CA001C9254 /* HeroCell.swift */,
+				D37A99D02A2272F4001C9254 /* HeroeListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D37A99C92A227299001C9254 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99D42A227312001C9254 /* HeroListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D37A99CA2A2272A8001C9254 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99D82A2273E4001C9254 /* PresenterHeroList.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D37A99CB2A2272B5001C9254 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99DC2A227400001C9254 /* RouterHeroList.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D37A99E02A23CEDC001C9254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99E82A23CF66001C9254 /* ViewSeries.swift */,
+				D37A99F42A23D30B001C9254 /* CellViewSeries.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D37A99E12A23CEE3001C9254 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99E42A23CF32001C9254 /* InteractorSeries.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D37A99E22A23CEEB001C9254 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99EC2A23CF8A001C9254 /* PresenterSeries.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D37A99E32A23CEF1001C9254 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D37A99F02A23CFD3001C9254 /* RouterSeries.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -399,13 +526,24 @@
 			files = (
 				D37A99B82A226C57001C9254 /* LoginPresenter.swift in Sources */,
 				D37A99A52A2264FA001C9254 /* SeriesModel.swift in Sources */,
+				D37A99E52A23CF32001C9254 /* InteractorSeries.swift in Sources */,
 				D37A99B42A226AC8001C9254 /* LoginView.swift in Sources */,
+				D37A99CD2A2272CA001C9254 /* HeroCell.swift in Sources */,
+				D37A99F52A23D30B001C9254 /* CellViewSeries.swift in Sources */,
 				D37A996A2A22639E001C9254 /* ViewController.swift in Sources */,
 				D37A99992A226484001C9254 /* BaseNetwork.swift in Sources */,
+				D37A99E92A23CF66001C9254 /* ViewSeries.swift in Sources */,
+				D37A99D52A227312001C9254 /* HeroListInteractor.swift in Sources */,
+				D37A99D12A2272F4001C9254 /* HeroeListView.swift in Sources */,
+				D37A99C52A227273001C9254 /* ImageLoader.swift in Sources */,
 				D37A99662A22639E001C9254 /* AppDelegate.swift in Sources */,
+				D37A99DD2A227400001C9254 /* RouterHeroList.swift in Sources */,
+				D37A99F12A23CFD3001C9254 /* RouterSeries.swift in Sources */,
 				D37A999F2A2264D7001C9254 /* HeroeModel.swift in Sources */,
 				D37A99682A22639E001C9254 /* SceneDelegate.swift in Sources */,
 				D37A99C02A226C93001C9254 /* LoginRouter.swift in Sources */,
+				D37A99ED2A23CF8A001C9254 /* PresenterSeries.swift in Sources */,
+				D37A99D92A2273E4001C9254 /* PresenterHeroList.swift in Sources */,
 				D37A99BC2A226C75001C9254 /* LoginInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,14 +552,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37A99F62A23D30B001C9254 /* CellViewSeries.swift in Sources */,
 				D37A99B92A226C57001C9254 /* LoginPresenter.swift in Sources */,
+				D37A99EA2A23CF66001C9254 /* ViewSeries.swift in Sources */,
+				D37A99D22A2272F4001C9254 /* HeroeListView.swift in Sources */,
 				D37A99A62A2264FA001C9254 /* SeriesModel.swift in Sources */,
 				D37A99BD2A226C75001C9254 /* LoginInteractor.swift in Sources */,
 				D37A997D2A22639F001C9254 /* VIPER_UIKit_CombineTests.swift in Sources */,
 				D37A999A2A226484001C9254 /* BaseNetwork.swift in Sources */,
+				D37A99CE2A2272CA001C9254 /* HeroCell.swift in Sources */,
+				D37A99DA2A2273E4001C9254 /* PresenterHeroList.swift in Sources */,
+				D37A99C62A227273001C9254 /* ImageLoader.swift in Sources */,
+				D37A99D62A227312001C9254 /* HeroListInteractor.swift in Sources */,
+				D37A99DE2A227400001C9254 /* RouterHeroList.swift in Sources */,
 				D37A99B52A226AC8001C9254 /* LoginView.swift in Sources */,
+				D37A99E62A23CF32001C9254 /* InteractorSeries.swift in Sources */,
 				D37A99C12A226C93001C9254 /* LoginRouter.swift in Sources */,
+				D37A99EE2A23CF8A001C9254 /* PresenterSeries.swift in Sources */,
 				D37A99A02A2264D7001C9254 /* HeroeModel.swift in Sources */,
+				D37A99F22A23CFD3001C9254 /* RouterSeries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,13 +578,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37A99D32A2272F4001C9254 /* HeroeListView.swift in Sources */,
 				D37A99B62A226AC8001C9254 /* LoginView.swift in Sources */,
 				D37A999B2A226484001C9254 /* BaseNetwork.swift in Sources */,
+				D37A99DF2A227400001C9254 /* RouterHeroList.swift in Sources */,
+				D37A99C72A227273001C9254 /* ImageLoader.swift in Sources */,
+				D37A99EF2A23CF8A001C9254 /* PresenterSeries.swift in Sources */,
+				D37A99DB2A2273E4001C9254 /* PresenterHeroList.swift in Sources */,
 				D37A99BA2A226C57001C9254 /* LoginPresenter.swift in Sources */,
+				D37A99E72A23CF32001C9254 /* InteractorSeries.swift in Sources */,
 				D37A99892A22639F001C9254 /* VIPER_UIKit_CombineUITestsLaunchTests.swift in Sources */,
+				D37A99D72A227312001C9254 /* HeroListInteractor.swift in Sources */,
 				D37A99BE2A226C75001C9254 /* LoginInteractor.swift in Sources */,
+				D37A99F32A23CFD3001C9254 /* RouterSeries.swift in Sources */,
+				D37A99EB2A23CF66001C9254 /* ViewSeries.swift in Sources */,
 				D37A99C22A226C93001C9254 /* LoginRouter.swift in Sources */,
 				D37A99872A22639F001C9254 /* VIPER_UIKit_CombineUITests.swift in Sources */,
+				D37A99CF2A2272CA001C9254 /* HeroCell.swift in Sources */,
+				D37A99F72A23D30B001C9254 /* CellViewSeries.swift in Sources */,
 				D37A99A12A2264D7001C9254 /* HeroeModel.swift in Sources */,
 				D37A99A72A2264FA001C9254 /* SeriesModel.swift in Sources */,
 			);

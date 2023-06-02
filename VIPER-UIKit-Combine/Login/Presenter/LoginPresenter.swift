@@ -7,6 +7,32 @@
 
 import Foundation
 
+
+protocol LoginPresentationProtocol: AnyObject {
+    func didTapStartButton()
+}
+
+class LoginPresenter: LoginPresentationProtocol {
+    weak var view: LoginViewProtocol?
+    var interactor: LoginInteractorInputProtocol?
+    var router: LoginRouterProtocol?
+    
+    func didTapStartButton() {
+        interactor?.handleStartButtonTapped()
+    }
+}
+
+extension LoginPresenter: LoginInteractorOutputProtocol {
+    func didSuccessfullyHandleStartButtonTapped() {
+        router?.closeLogin()
+    }
+    
+    func didFailHandlingStartButtonTapped(withError error: Error) {
+        view?.showError(error)
+    }
+}
+
+/*
 protocol LoginPresentationProtocol: AnyObject {
     func didTapStartButton()
 }
@@ -30,3 +56,4 @@ extension LoginPresenter: LoginInteractorOutputProtocol {
         view?.showError(error)
     }
 }
+*/
