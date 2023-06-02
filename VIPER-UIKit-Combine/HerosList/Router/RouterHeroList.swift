@@ -30,8 +30,9 @@ class HeroesListRouter: HeroesListRoutingProtocol {
 
     
     func presentHeroSeries(for hero: Hero) {
-        // Instantiate and present HeroDetailViewController here
-        // you will implement this function in the future
+        let seriesListViewController = SeriesListRouter.createSeriesListModule(for: hero)
+        viewController?.present(seriesListViewController, animated: true)
     }
+
 }
 

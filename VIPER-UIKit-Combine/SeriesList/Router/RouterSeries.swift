@@ -9,12 +9,23 @@ import Foundation
 import UIKit
 
 protocol SeriesListRoutingProtocol: AnyObject {
-    // Navigation goes here
+    // para navegar, pero no es necesario aun
 }
 
 class SeriesListRouter: SeriesListRoutingProtocol {
     weak var viewController: UIViewController?
-    // No se implementa navigateToSerieDetail ya que no hay una pantalla de detalle por el momento
+    
+    static func createSeriesListModule(for hero: Hero) -> UIViewController {
+            let view = SeriesListView(imageLoader: ImageLoader())
+            let interactor = SeriesListInteractor(api: MarvelAPI())
+            let router = SeriesListRouter()
+            let presenter = SeriesListPresenter(view: view, interactor: interactor, router: router, imageLoader: ImageLoader(), hero: hero)
+
+            view.presenter = presenter
+            router.viewController = view
+
+            return view
+        }
 }
 
 
