@@ -34,6 +34,8 @@ class HeroCell: UITableViewCell {
         addSubview(heroNameLabel)
         
         setupConstraints()
+        
+        backgroundColor = UIColor.blue // Color de fondo de las celdas
     }
     
     required init?(coder: NSCoder) {

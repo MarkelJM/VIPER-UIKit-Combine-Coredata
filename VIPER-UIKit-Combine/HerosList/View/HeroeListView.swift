@@ -35,8 +35,19 @@ class HeroesListViewController: UIViewController, HeroesListViewProtocol {
         tableView.register(HeroCell.self, forCellReuseIdentifier: HeroCell.identifier)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.backgroundColor = UIColor.yellow // Color de fondo de la tabla
         view.addSubview(tableView)
+        
+        // Añadir constraints
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        ])
     }
+
     
     func updateHeroes(_ heroes: [Hero]) {
         print("View received heroes: \(heroes)")

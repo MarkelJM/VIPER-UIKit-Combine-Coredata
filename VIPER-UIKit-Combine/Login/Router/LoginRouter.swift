@@ -34,11 +34,10 @@ class LoginRouter: LoginRouterProtocol {
     }
     
     func closeLogin() {
-        viewController?.dismiss(animated: true, completion: {
-            let heroesListViewController = HeroesListRouter.createHeroesListModule()
-            UIApplication.shared.keyWindow?.rootViewController = UINavigationController(rootViewController: heroesListViewController)
-        })
+        let heroesListViewController = HeroesListRouter.createHeroesListModule()
+        viewController?.navigationController?.pushViewController(heroesListViewController, animated: true)
     }
+
 }
 
 /*
