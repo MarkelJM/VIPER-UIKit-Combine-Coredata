@@ -28,6 +28,8 @@ class SerieCell: UITableViewCell {
         serieDescriptionLabel.numberOfLines = 0
         serieDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(serieDescriptionLabel)
+        
+        self.backgroundColor = UIColor.red 
 
         NSLayoutConstraint.activate([
             serieImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),

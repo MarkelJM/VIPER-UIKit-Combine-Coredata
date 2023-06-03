@@ -43,6 +43,16 @@ class SeriesListPresenter: SeriesListPresentationProtocol {
                 self?.view?.updateSeries(series)
             }
             .store(in: &cancellables)
+
+        // Desempaqueta 'view' aquí antes de usarlo
+        if let view = self.view {
+            view.seriesPublisher
+                .sink { [weak self] series in
+                    self?.view?.updateSeries(series)
+                }
+                .store(in: &cancellables)
+        }
     }
+
 }
 
