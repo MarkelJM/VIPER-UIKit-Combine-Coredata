@@ -72,6 +72,7 @@ class SeriesListView: UIViewController, SeriesListViewProtocol {
     }
 
     func updateSeries(_ series: [Serie]) {
+        print(series)
         self.series = series
         tableView.reloadData()
         seriesSubject.send(series)

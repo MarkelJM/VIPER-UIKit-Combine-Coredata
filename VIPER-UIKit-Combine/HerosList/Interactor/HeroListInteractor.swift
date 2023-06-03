@@ -28,8 +28,8 @@ class HeroesListInteractor: HeroesListInteractorInputProtocol {
         return marvelAPI.getHeroesRequest()
             .receive(on: DispatchQueue.main)
             .map { result in
-                print("API Response: \(result)") // Imprime la respuesta de la API
-                print("Interactor received API response: \(result)") //es lo mismo de arriba, pero comprobar si los demas prinst no aparecen por limitacion de carcateres o porque no llega
+                //print("API Response: \(result)") // Imprime la respuesta de la API
+                //print("Interactor received API response: \(result)") //es lo mismo de arriba, pero comprobar si los demas prinst no aparecen por limitacion de carcateres o porque no llega
                 return result
             }
             .eraseToAnyPublisher()

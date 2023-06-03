@@ -27,6 +27,9 @@ class SeriesListInteractor: SeriesListInteractorInputProtocol {
         let request = api.getSeriesRequest(for: hero, limit: limit)
         return URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
+            .handleEvents(receiveOutput: { data in
+                    print(String(data: data, encoding: .utf8) ?? "Invalid data")  // lo mismo que llamada api de heroe
+                })
             .decode(type: SerieWelcome.self, decoder: JSONDecoder())
             .map { $0.data.results }
             .eraseToAnyPublisher()

@@ -38,7 +38,7 @@ class HeroesListPresenter: HeroesListPresentationProtocol {
                     break
                 }
             } receiveValue: { [weak self] heroes in
-                print("Presenter received heroes: \(heroes)")
+                //print("Presenter received heroes: \(heroes)")
                 self?.view?.updateHeroes(heroes)
             }
             .store(in: &cancellables)

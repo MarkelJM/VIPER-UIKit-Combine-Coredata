@@ -66,8 +66,8 @@ class HeroCell: UITableViewCell {
     func configure(with hero: Hero) {
         heroNameLabel.text = hero.name
         if let imageUrl = URL(string: "\(hero.thumbnail.path).\(hero.thumbnail.thumbnailExtension ?? "")") {
-            print("aqui imagenes celdas")
-            print("Image URL: \(imageUrl)") // Imprime la URL de la imagen
+            //print("aqui imagenes celdas")
+            //print("Image URL: \(imageUrl)") // Imprime la URL de la imagen
             imageLoader?.loadImage(from: imageUrl, into: heroImageView)
         }
     }

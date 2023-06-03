@@ -40,6 +40,9 @@ struct MarvelAPI {
         }
         return URLSession.shared.dataTaskPublisher(for: url)
             .map { $0.data }
+            .handleEvents(receiveOutput: { data in
+                    print(String(data: data, encoding: .utf8) ?? "Invalid data")  ///comprobamos datos
+                })
             .decode(type: HeroeWelcome.self, decoder: JSONDecoder())
             .map { $0.data.results }
             .eraseToAnyPublisher()
