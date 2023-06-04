@@ -25,9 +25,10 @@ class SerieCell: UITableViewCell {
         contentView.addSubview(serieTitleLabel)
 
         serieDescriptionLabel = UILabel()
-        serieDescriptionLabel.numberOfLines = 0
+        serieDescriptionLabel.numberOfLines = 7
         serieDescriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(serieDescriptionLabel)
+        
         
         self.backgroundColor = UIColor.red 
 

@@ -61,6 +61,7 @@ class SeriesListView: UIViewController, SeriesListViewProtocol {
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
+        tableView.backgroundColor = UIColor.brown
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

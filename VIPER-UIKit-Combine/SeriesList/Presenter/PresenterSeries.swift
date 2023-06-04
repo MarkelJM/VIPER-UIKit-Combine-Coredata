@@ -28,7 +28,7 @@ class SeriesListPresenter: SeriesListPresentationProtocol {
         self.imageLoader = imageLoader
         self.hero = hero
     }
-
+    /*
     func viewDidLoad() {
         interactor.fetchSeries(for: hero, limit: 5)
             .receive(on: DispatchQueue.main)
@@ -53,6 +53,25 @@ class SeriesListPresenter: SeriesListPresentationProtocol {
                 .store(in: &cancellables)
         }
     }
+     */
+    
+    /* Tengo problemas con el publisher*/
+    func viewDidLoad() {
+        interactor.fetchSeries(for: hero, limit: 5)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] completion in
+                switch completion {
+                case .failure(let error):
+                    self?.view?.showError(error)
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] series in
+                self?.view?.updateSeries(series)
+            }
+            .store(in: &cancellables)
+    }
+
 
 }
 
