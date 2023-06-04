@@ -16,8 +16,8 @@ final class VIPER_UIKit_CombineTests: XCTestCase {
     let heroData: Data = """
     {
         "id": 1,
-        "name": "Test Hero",
-        "description": "Test Description",
+        "name": "Test titulo heroe",
+        "description": "Test descripcion heroe",
         "thumbnail": {
             "path": "https://test.com",
             "extension": "jpg"
@@ -28,8 +28,8 @@ final class VIPER_UIKit_CombineTests: XCTestCase {
     let serieData: Data = """
     {
         "id": 1,
-        "title": "Test Serie",
-        "description": "Test Description",
+        "title": "Test titulo serie",
+        "description": "Test descripcion serie",
         "thumbnail": {
             "path": "https://test.com",
             "extension": "jpg"
@@ -54,8 +54,8 @@ final class VIPER_UIKit_CombineTests: XCTestCase {
         do {
             let hero = try decoder.decode(Hero.self, from: heroData)
             XCTAssertEqual(hero.id, 1)
-            XCTAssertEqual(hero.name, "Test Hero")
-            XCTAssertEqual(hero.description, "Test Description")
+            XCTAssertEqual(hero.name, "Test titulo heroe")
+            XCTAssertEqual(hero.description, "Test descripcion heroe")
             XCTAssertEqual(hero.thumbnail.path, "https://test.com")
             XCTAssertEqual(hero.thumbnail.thumbnailExtension, "jpg")
         } catch {
@@ -68,8 +68,8 @@ final class VIPER_UIKit_CombineTests: XCTestCase {
         do {
             let serie = try decoder.decode(Serie.self, from: serieData)
             XCTAssertEqual(serie.id, 1)
-            XCTAssertEqual(serie.title, "Test Serie")
-            XCTAssertNil(serie.description)
+            XCTAssertEqual(serie.title, "Test titulo serie")
+            XCTAssertEqual(serie.description, "Test descripcion serie")
             XCTAssertEqual(serie.thumbnail.path, "https://test.com")
             XCTAssertEqual(serie.thumbnail.thumbnailExtension, "jpg")
         } catch {
